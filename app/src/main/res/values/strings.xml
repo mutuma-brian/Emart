@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Emart</string>
+    <string name="emart_slogan">Need it Click it!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_register">HomeActivity</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="no_account">I have no Account? Register</string>
+    <string name="email_hint">mutumadeveloper@gmail.com</string>
+    <string name="password_hint">**********</string>
+    <string name="login_text">Login</string>
+    <string name="phone_text">Phone</string>
+    <string name="phone_hint">07********</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="home">Home</string>
+    <string name="favourites">Favourites</string>
+    <string name="account">Account</string>
+    <string name="cart">Cart</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_price">Product Price</string>
+    <string name="product_name">Product Name</string>
+    <string name="username">Username</string>
+    <string name="username_hint">DeathMonk</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="search_icon_description">Search</string>
+</resources>
