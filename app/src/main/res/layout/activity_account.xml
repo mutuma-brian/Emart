@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/imageViewProfilePic"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_launcher_foreground"
+        android:layout_width="3000dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_account"
         android:layout_centerHorizontal="true"/>
 
     <TextView
@@ -51,13 +51,15 @@
         android:layout_marginLeft="133dp"
         android:layout_marginTop="103dp"
         android:elevation="23dp"
-        android:text="@string/sign_out" />
+        android:text="@string/sign_out"
+        app:cornerRadius="@dimen/car_ui_padding_3" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:elevation="19dp"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/bottom_navigation_menu" />
 

@@ -10,19 +10,27 @@ object BottomNavigationHandler {
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
-                    openActivity(context, HomeActivity::class.java)
+                    if (context !is HomeActivity) {
+                        openActivity(context, HomeActivity::class.java)
+                    }
                     true
                 }
                 R.id.nav_favorites -> {
-                    openActivity(context, FavouritesActivity::class.java)
+                    if (context !is FavouritesActivity) {
+                        openActivity(context, FavouritesActivity::class.java)
+                    }
                     true
                 }
                 R.id.nav_cart -> {
-                    openActivity(context, CartActivity::class.java)
+                    if (context !is CartActivity) {
+                        openActivity(context, CartActivity::class.java)
+                    }
                     true
                 }
                 R.id.nav_account -> {
-                    openActivity(context, AccountActivity::class.java)
+                    if (context !is AccountActivity) {
+                        openActivity(context, AccountActivity::class.java)
+                    }
                     true
                 }
                 else -> false
@@ -32,7 +40,6 @@ object BottomNavigationHandler {
 
     private fun openActivity(context: Context, cls: Class<*>) {
         val intent = Intent(context, cls)
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
         context.startActivity(intent)
     }
 }

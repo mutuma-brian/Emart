@@ -9,10 +9,10 @@ class FavouritesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_account)
+        setContentView(R.layout.activity_favourites)
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
-        BottomNavigationHandler.setupBottomNavigation(this, bottomNavigationView)
+        BottomNavigationHandler.setupBottomNavigation(this@FavouritesActivity, bottomNavigationView)
 
     }
 

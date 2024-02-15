@@ -1,7 +1,9 @@
 package com.mutuma.emart
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -19,12 +21,12 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
-        BottomNavigationHandler.setupBottomNavigation(this, bottomNavigationView)
+        BottomNavigationHandler.setupBottomNavigation(this@HomeActivity, bottomNavigationView)
 
         productList = mutableListOf()
         homeRecyclerView = findViewById(R.id.homeRecyclerView)
-        homeRecyclerView.adapter = HomeRecyclerViewAdapter(productList)
-        homeRecyclerView.layoutManager = GridLayoutManager(this, 2)
+        homeRecyclerView.adapter = HomeRecyclerViewAdapter(productList, this@HomeActivity)
+        homeRecyclerView.layoutManager = GridLayoutManager(this@HomeActivity, 2)
 
 
         databaseReference = FirebaseDatabase.getInstance().getReference("products")
@@ -47,3 +49,4 @@ class HomeActivity : AppCompatActivity() {
         })
     }
 }
+
