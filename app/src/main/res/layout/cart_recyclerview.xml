@@ -17,9 +17,10 @@
             android:id="@+id/productCartImage"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/ic_image"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/product_image_description"
             android:scaleType="centerCrop"
-            android:layout_marginEnd="16dp"/>
+            android:src="@drawable/ic_image" />
 
         <TextView
             android:id="@+id/productCartName"
@@ -57,5 +58,47 @@
             android:textColor="#8F8F84"
             android:textSize="14sp" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/productCartDescription"
+            android:layout_marginEnd="14dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSubtract"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:elevation="2dp"
+                android:text="@string/product_subtract"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/productAmountTextView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:text="@string/product_cart_amount"
+                android:textColor="#8F8F84"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/light_orange"
+                android:elevation="2dp"
+                android:text="@string/product_add"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
     </RelativeLayout>
+
 </androidx.cardview.widget.CardView>

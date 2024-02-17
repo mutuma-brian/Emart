@@ -71,6 +71,7 @@ class RegisterActivity : AppCompatActivity() {
                     val user = User(email, phone, username)
 
                     database.reference.child("users").child(userId).setValue(user)
+                    Toast.makeText(this@RegisterActivity, "Registered Successfully", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
                     finish()
                 }

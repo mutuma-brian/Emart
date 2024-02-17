@@ -15,15 +15,21 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="sign_up">Sign Up</string>
     <string name="sign_out">Sign Out</string>
+    <string name="product_image_description">Product Image</string>
     <string name="home">Home</string>
     <string name="favourites">Favourites</string>
     <string name="account">Account</string>
     <string name="cart">Cart</string>
     <string name="product_description">Product Description</string>
+    <string name="account_profile_pic_description">User Profile</string>
     <string name="product_price">Product Price</string>
     <string name="product_name">Product Name</string>
     <string name="username">Username</string>
     <string name="username_hint">DeathMonk</string>
     <string name="add_to_cart">Add to Cart</string>
     <string name="search_icon_description">Search</string>
+    <string name="button_checkout">Checkout</string>
+    <string name="product_cart_amount">1</string>
+    <string name="product_add">+</string>
+    <string name="product_subtract">-</string>
 </resources>

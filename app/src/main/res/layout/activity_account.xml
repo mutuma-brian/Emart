@@ -12,6 +12,9 @@
         android:id="@+id/imageViewProfilePic"
         android:layout_width="3000dp"
         android:layout_height="300dp"
+        android:contentDescription="@string/account_profile_pic_description"
+        android:clickable="true"
+        android:focusable="true"
         android:src="@drawable/ic_account"
         android:layout_centerHorizontal="true"/>
 
