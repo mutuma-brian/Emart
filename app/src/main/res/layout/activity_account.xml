@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageViewProfilePic"
-        android:layout_width="3000dp"
-        android:layout_height="300dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:contentDescription="@string/account_profile_pic_description"
         android:clickable="true"
         android:focusable="true"
